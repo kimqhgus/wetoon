@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1360">
+  <title>위툰-WETOON</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme_.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="css/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <div id="header">
+    <div class="header_inner">
+      <a href="index.html" class="logo"></a>
+      <ul>
+        <li><a href="#"><img src="images/main/search_icon.png" alt="검색"></a></li>
+        <li><a href="#"><img src="images/main/friend_icon.png" alt="친구"></a></li>
+        <li><a href="#"><img src="images/main/alarm_icon.png" alt="알람"></a></li>
+        <li><a href="#"><img src="images/main/profile_icon.png" alt="프로필"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="nav">
+    <div class="nav_inner">
+      <ul>
+        <li><a href="sub/sub_webtoon.html">웹툰</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">스토어</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main_banner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/main/main_banner1.png" alt="로고"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/main/main_banner2.jpg" alt="로고"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/main/main_banner3.jpg" alt="로고"></a></div>
+    
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    
+        <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  </div>
+
+  <div id="contents1">
+    <img src="images/main/title_bookmark.png" alt="관심웹툰" class="title">
+    <ul>
+      <li><img src="images/main/bookmark_toon1.png" alt="속박">
+        <div class="text">
+          <h1>속박</h1>
+          <p>김보현</p>
+          <p>#스릴러 #화요웹툰 #15세</p>
+          <a href="#">이어서보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_on.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/bookmark_toon2.png" alt="하늘바라기">
+        <div class="text">
+          <h1>하늘바라기</h1>
+          <p>김보현</p>
+          <p>#드라마 #토요웹툰 #15세</p>
+          <a href="#">이어서보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_on.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/bookmark_toon3.png" alt="예뻐지고싶어">
+        <div class="text">
+          <h1>예뻐지고 싶어</h1>
+          <p>김보현</p>
+          <p>#드라마 #수요웹툰 #전체이용가</p>
+          <a href="#">이어서보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_on.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+        <li><img src="images/main/bookmark_toon4.png" alt="무제">
+          <div class="text">
+            <h1>무제</h1>
+            <p>김보현</p>
+            <p>#드라마 #월요웹툰 #전체이용가</p>
+            <a href="#">이어서보기</a>
+            <a href="#">상세보기</a>
+            <button><img src="images/main/bookmark_on.png" alt="관심목록에서 제외하기"></button>
+          </div></li>
+          <li>
+            
+         </li>
+    </ul>
+  </div>
+
+  <!-- 스토어 -->
+  <div class="contents2_bg">
+    <div id="contents2">
+      <img src="images/main/title_store.png" alt="스토어">
+      <p class="title2">금주의 잘나가는 인기아이템</p>
+  
+      <section class="regular slider">
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store-pen.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 위니투니 볼펜 세트(2p)</p>
+              <h1>3,200 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_ravel.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 투니 기프트 라벨택 50p</p>
+              <h2>2,750 원</h2>
+              <h1><span>8%</span> 2,530 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_diary.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 미니 스프링 수첩 3종</p>
+              <h1>1,500 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_cup.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 시그니처 머그컵 2종</p>
+              <h1>9,800 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_comicbook.png"></div>
+            <div class="gallery_text">
+              <p>[예뻐지고 싶어] 코믹북</p>
+              <h2>18,000 원</h2>
+              <h1><span>10%</span> 16,200 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store-pen.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 위니투니 볼펜 세트(2p)</p>
+              <h1>3,200 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_cup.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 시그니처 머그컵 2종</p>
+              <h1>9,800 원</h1>
+            </div></a>
+          </div>
+        </div>
+        <div>
+          <a href="javascript:return false;"><div class="gallery">
+            <div class="gallery_img"><img src="images/main/store_ravel.png"></div>
+            <div class="gallery_text">
+              <p>[위툰즈] 투니 기프트 라벨택 50p</p>
+              <h2>2,750 원</h2>
+              <h1><span>8%</span> 2,530 원</h1>
+            </div></a>
+          </div>
+        </div>
+      </section>
+  
+  
+  
+  
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        $(document).on('ready', function () {
+          $(".regular").slick({
+            infinite: true, /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+            slidesToShow: 4, /* 화면에 보여질 이미지 갯수*/
+            slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */
+            autoplay: true, /* 자동으로 다음이미지 보여주기 */
+            arrows: true, /* 화살표 */
+            dots: true, /* 아래점 */
+            autoplaySpeed: 1000,/* 다음이미지로 넘어갈 시간 */
+            speed: 1000, /* 다음이미지로 넘겨질때 걸리는 시간 */
+            pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
+            //vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/        
+          });
+
+        });
+      </script>
+
+      <div class="store_link">
+        <a href="javascript:return false;"><img src="images/main/store_more.png" alt="스토어바로가기"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 요핫툰 -->
+  <div id="contents3">
+    <img src="images/main/title_yohottoon.png" alt="요즘핫한웹툰">
+    <p class="title2">인기있는 웹툰들을 다 모았다!!</p>
+    <ul>
+      <li><img src="images/main/hot_toon1.png" alt="그마남이야기">
+        <div class="text">
+          <h1>그마남 이야기</h1>
+          <p>김밀콩</p>
+          <p>#판타지 #금요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon2.png" alt="아가미">
+        <div class="text">
+          <h1>아가미</h1>
+          <p>이경하, 구병모</p>
+          <p>#드라마 #월요웹툰 #15세</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon3.png" alt="피팅룸문지기의 전설">
+        <div class="text">
+          <h1>피팅룸문지기의 전설</h1>
+          <p>무화, 수근</p>
+          <p>#판타지액션 #토요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon4.png" alt="식물인간">
+        <div class="text">
+          <h1>식물인간</h1>
+          <p>진아</p>
+          <p>#판타지 #토요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon5.png" alt="아기가 생겼어요">
+        <div class="text">
+          <h1>아기가 생겼어요</h1>
+          <p>강기, 이정</p>
+          <p>#로맨스 #수요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon6.png" alt="낮에 뜨는 별">
+        <div class="text">
+          <h1>낮에 뜨는 별</h1>
+          <p>채은, 고다고</p>
+          <p>#로맨스 #일요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon7.png" alt="두근두근 공략기">
+        <div class="text">
+          <h1>두근두근 공략기</h1>
+          <p>퓨키</p>
+          <p>#로맨스 #금요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon8.png" alt="노모어 프린스">
+        <div class="text">
+          <h1>노모어 프린스</h1>
+          <p>만물상, 밀밭</p>
+          <p>#로판 #토요웹툰 #15세</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon9.png" alt="시간의 계단">
+        <div class="text">
+          <h1>시간의 계단</h1>
+          <p>주영하, 제뉴</p>
+          <p>#로맨스 #목요웹툰 #15세</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon10.png" alt="쎄쎄쎄">
+        <div class="text">
+          <h1>쎄쎄쎄</h1>
+          <p>제민</p>
+          <p>#로맨스 #월요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon11.png" alt="너와 사는 오늘">
+        <div class="text">
+          <h1>너와 사는 오늘</h1>
+          <p>우지혜, 두르</p>
+          <p>#판타지 #금요웹툰 #전체이용가</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+      <li><img src="images/main/hot_toon12.png" alt="어밴던드">
+        <div class="text">
+          <h1>어밴던드 - 버려진 곳에서의<br> 생존일기</h1>
+          <p>꼬냑(cognac)</p>
+          <p>#액션 #금요웹툰 #12세</p>
+          <a href="#">첫화보기</a>
+          <a href="#">상세보기</a>
+          <button><img src="images/main/bookmark_off.png" alt="관심목록에서 제외하기"></button>
+        </div></li>
+    </ul>
+  </div>
+
+  <div id="ch_banner">
+    <a href="#"><img src="images/main/ch_banner.png" alt="카카오톡채널배너"></a>
+  </div>
+
+  <div class="contents4_bg">
+
+    <div id="contents4">
+      <img src="images/main/title_contents.png" alt="컨텐츠" class="title_contents">
+      <!-- 커뮤니티 라운지 -->
+      <div class="box">
+        <div class="box_header">
+          <h2>커뮤니티 라운지</h2>
+          <a href="#"><img src="images/main/contents_after.png" alt="자세히보기"></a>
+        </div>
+        <div class="box_body">
+          <ul>
+            <li><a href="#">
+                <img src="images/main/best_icon.png" alt="best" class="best">
+                <h3>[유머] 게시글 내용 <span>(9)</span></h3>
+                <img src="images/main/pic_icon.png" alt="사진첨부">
+                <p>닉네임 ┃ 03-26</p>
+              </a></li>
+            <li><a href="#">
+                <img src="images/main/best_icon.png" alt="best">
+                <h3>[리뷰] 채은,고다고 - 낮에 뜨는 별 (로맨스물) | ★★★★ <span>(4)</span></h3>
+                <img src="images/main/pic_icon.png" alt="사진첨부">
+                <p>닉네임 ┃ 02-15</p>
+              </a></li>
+            <li><a href="#">
+                <h3>[유머] 게시글 내용 <span>(8)</span></h3>
+                <p>닉네임 ┃ 03-26</p>
+              </a></li>
+            <li><a href="#">
+                <h3>[정보] 게시글 내용 <span>(1)</span></h3>
+                <p>닉네임 ┃ 04-01</p>
+              </a></li>
+            <li><a href="#">
+  
+                <h3>[웹툰] 게시글 내용</h3>
+                <img src="images/main/pic_icon.png" alt="사진첨부">
+                <p>닉네임 ┃ 03-30</p>
+              </a></li>
+            <li><a href="#">
+                <h3>[질문] 게시글 내용 <span>(2)</span></h3>
+                <p>닉네임 ┃ 03-29</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- 공지사항 -->
+      <div class="notice_box">
+        <div class="box_header">
+          <h2>공지사항</h2>
+          <a href="#"><img src="images/main/contents_after.png" alt="자세히보기"></a>
+        </div>
+        <div class="box_body2">
+          <ul>
+            <li><a href="#">
+                <p>[공지] 개인정보 처리방침 개정안내</p>
+                <p>22-01-18</p>
+              </a></li>
+            <li><a href="#">
+                <p>[WETOON AWARDS] 2021 위툰 연말 대상</p>
+                <p>21-12-23</p>
+              </a></li>
+            <li><a href="#">
+                <p>[공지] 서비스 점검 안내</p>
+                <p>21-12-07</p>
+              </a></li>
+            <li><a href="#">
+                <p>[공지] 이용약관 개정 안내</p>
+                <p>21-11-28</p>
+              </a></li>
+            <li><a href="#">
+                <p>[이벤트] 새로워진 출석체크!</p>
+                <p>21-11-16</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- 스토어/위툰즈 -->
+      <a class="store_wetoonz">
+        <a href="#" class="small_box box1">
+          <p>다양한 상품들이 가득~</p>
+          <h4>스토어<br>바로가기</h4>
+        </a>
+        <a href="#" class="small_box box2">
+          <p>위툰의 귀여운 마스코트!</p>
+          <h4>위툰즈를<br>소개합니다</h4>
+        </a>
+    </div>
+  </div>
+  </div>
+
+  <!-- 앱 배너 -->
+  <div id="app_banner">
+    <div class="outer_size">
+    <img src="images/main/market_banner_ani.png" alt="애니메이션말풍선" class="ani">
+    
+      <div class="market">
+        <a href="#"><img src="images/main/googleplay.png" alt="구글플레이"></a>
+        <a href="#"><img src="images/main/appstore.png" alt="앱스토어"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div id="footer_top">
+    <div class="top_inner">
+      <img src="images/main/footer_logo.png" alt="푸터로고">
+      <ul>
+        <li><a href="#">
+          <img src="images/main/sns_facebook.png" alt="페이스북">
+        </a></li>
+        <li><a href="#">
+          <img src="images/main/sns_blog.png" alt="블로그">
+        </a></li>
+        <li><a href="#">
+          <img src="images/main/sns_ch.png" alt="카카오채널">
+        </a></li>
+        <li><a href="#">
+          <img src="images/main/sns_insta.png" alt="인스타그램">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <p>위툰에 게시된 모든 콘텐츠는 저작권법에 의거 보호받고 있습니다.<br>
+    저작권자와 위툰의 사전허가 없이 콘텐츠의 일부 또는 전부를 복제, 배포, 판매, 개작 및 기타의 방법으로 감상하거나 타인에게 제공할경우<br>
+    저작권법에 따른 법적 제재를 받으실 수 있으므로 주의하시기 바랍니다.</p>
+    <p>부산광역시 중구 중앙대로 26 다원중앙타워 10층 | 사업자등록번호 : 000-00-00000 | 대표자 :김보현<br>
+    대표번호 : 051-245-0000 | 고객센터 : 070-0000-0000   <span>help@wetoon.com</span></p>
+  </div>
+
+  <!-- fixed -->
+  <div id="fixed">
+    <ul>
+      <li>
+        <a href="#"><img src="images/main/fixed_top.png" alt="TOP"></a>
+      </li>
+      <li>
+        <a href="javascript:return false;"><img src="images/main/fixed_chat.png" alt="chatting"></a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

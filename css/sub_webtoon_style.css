@@ -1,0 +1,370 @@
+/* 웹폰트 */
+@font-face {
+  font-family: 'EliceDigitalBaeum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KoPubDotumMedium';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'EliceDigitalBaeum';
+  min-width: 1320px;
+}
+
+/* 헤더 */
+#header{
+  height: 60px;
+  border-bottom: #eee 1px solid;
+}
+.header_inner{
+width: 1320px;
+margin: 0 auto;
+height: 60px;
+padding: 10px 0;
+box-sizing: border-box;
+background-color: #fff;
+position: relative;
+}
+.header_inner ul{
+float: right;
+display: block;
+}
+.header_inner li{
+float: left;
+padding: 7px  0 0 20px;
+}
+.header_inner li:nth-child(4){
+padding-top: 0;
+}
+.logo{
+background: url(../images/main/logo.png) no-repeat 0 4px;
+width: 220px;
+height: 36px;
+display: inline-block;
+vertical-align: top;
+}
+
+#nav{
+height: 70px;
+text-align: center;
+}
+.nav_inner{
+display: inline-block;
+padding: 20px 0;
+}
+.nav_inner li{
+float: left;
+padding:0 70px;
+}
+
+.nav_inner a{
+font-size: 20px;
+transition: all 0.2s;
+}
+.nav_inner a:hover{
+color: #fcdd4c;
+}
+.on{
+  color: #fcdd4c;
+  }
+
+/* 요일별 웹툰 */
+#week_banner{
+  height: 250px;
+  background: url(../images/sub1_webtoon/week_banner.png) no-repeat center -160px fixed;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+h1{
+  font-size: 40px;
+  padding-top: 65px;
+  text-align: center;
+}
+#week_banner p{
+  font-size: 18px;
+  padding-top: 15px;
+}
+.tab-menu{
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
+  margin-left: -343.71px;
+}
+.tab-menu a{
+  display: block;
+  float: left;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 20px;
+}
+.tab-menu a:hover{
+  border-bottom: 3px solid #fcdd4c;
+}
+
+.tab-menu a.on {
+  border-bottom: 3px solid #fcdd4c;
+}
+.week_list{
+  width: 1320px;
+  margin: auto;
+}
+.hidden-area{
+	text-align:center;
+  margin: 80px auto;
+  height: 300px;
+  padding-top: 120px;
+}
+.hidden-area.on {
+	display:block;
+}
+/*.hidden-area{
+  width: 1320px;
+  margin: 80px auto;
+  height: 269px;
+}*/
+.hidden-area li{
+  float: left;
+  padding-right: 24px;
+}
+.hidden-area li img{
+  border-radius: 5px;
+}
+.hidden-area li:nth-child(6){
+  padding-right: 0;
+}
+.hidden-area li:hover img{
+  box-shadow: 1px 1px 5px rgba(0,0,0, 0.3);
+}
+.hidden-area .on{
+	display:block;
+}
+.tab_week{
+  padding-top: 120px;
+}
+.hidden-area {
+	display:none;
+}
+.list{
+  height: 460px;
+}
+/* 장르별 웹툰 */
+#genre{
+  background: #ffebeb;
+  height: 1000px;
+}
+.genre_inner{
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+}
+.genre_inner> p{
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0 20px 0;
+}
+.genre_nav li{
+  float: left;
+  margin: 35px;
+  opacity: 0.5;
+}
+.genre_nav{
+  display: inline-block;
+  position: absolute;
+  margin-left: -386.5px;
+  left: 50%;
+}
+.genre_nav li:hover{
+  opacity: 1;
+}
+.genre_nav .genre_on{
+  opacity: 1;
+}
+.genre_list{
+  margin-top: 104px;
+}
+.genre_list li{
+  width: 308px;
+  height: 310px;
+  float: left;
+  background: #fff;
+  border-radius: 15px;
+  margin-right: 29.2px;
+  box-shadow: 1px 1px 5px rgba(0,0,0, 0.1);
+}
+.genre_list li:nth-child(4), .genre_list li:nth-child(8){
+  margin-right: 0;
+}
+.genre_list li:nth-child(1), .genre_list li:nth-child(2), .genre_list li:nth-child(3), .genre_list li:nth-child(4){
+  margin-bottom: 30px;
+}
+.genre_img img{
+  border-radius: 15px 15px 0 0;
+}
+.genre_img{
+  height: 190px;
+}
+.genre_text{
+  padding: 15px 30px;
+}
+.genre_text> div{
+  display: inline-block;
+}
+.genre_text p{
+  font-size: 15px;
+  font-family: 'KoPubDotumMedium';
+}
+.genre_text img{
+  vertical-align: middle;
+}
+.genre_text .title{
+  font-size: 18px;
+  padding-right: 7px;
+}
+.genre_text .name{
+  font-size: 13px;
+  font-family: 'KoPubDotumMedium';
+}
+.genre_text h3{
+  font-size: 13px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+.genre_text .like{
+  padding-right: 5px;
+}
+
+.genre_list div:nth-child(1){
+  position: relative;
+}
+.genre_list div:nth-child(1) .hot{
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  top: -10px;
+}
+.genre_list div:nth-child(2){
+  position: relative;
+}
+.genre_list div:nth-child(2) .hot{
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  top: -10px;
+}
+
+/* 푸터 */
+#footer_top{
+  height: 72px;
+  border-bottom: 1px solid #ccc;
+}
+.top_inner{
+  width: 1320px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.top_inner img{
+  padding-top: 4px;
+}
+.top_inner ul{
+  float: right;
+}
+.top_inner li{
+  float: left;
+  margin-left: 25px;
+}
+.top_inner li a{
+  display: block;
+  height: 40px;
+}
+.top_inner li img{
+  filter: grayscale(100%);
+}
+.top_inner li a:hover img{
+  filter: none;
+}
+#footer{
+  background: url(../images/main/footer_safe.png) no-repeat 100% 50%;
+  width: 1320px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#footer p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+#footer p:nth-child(2){
+  padding-top: 20px;
+  color: #9d9d9d;
+}
+#footer span{
+  color: #333;
+}
+
+/* fixed */
+#fixed{ 
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+#fixed img{
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+#fixed li:nth-child(1){
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+
+/* 탭만들기 
+.tab-area {
+	margin:10px;
+	border:1px solid #000;
+}
+.tab-menu {
+	overflow:hidden;
+}
+.tab-menu a {
+	float:left;
+	width:20%;
+	height:30px;
+	border-left:1px solid #333;
+	background-color:#f5f5f5;
+	color:#000;
+	text-align:center;
+	text-decoration:none;
+	font-size:14px;
+	line-height:30px;
+}
+.tab-menu a:first-child {
+	border-left:0;
+}
+.tab-menu a.on {
+	background-color:#333;
+	color:#fff;
+}
+.hidden-area {
+	display:none;
+	height:100px;
+	border-top:1px solid #000;
+	background:#f5f5f5;
+	text-align:center;
+	font-size:20px;
+	line-height:100px;
+}
+.hidden-area.on {
+	display:block;
+}
+*/
